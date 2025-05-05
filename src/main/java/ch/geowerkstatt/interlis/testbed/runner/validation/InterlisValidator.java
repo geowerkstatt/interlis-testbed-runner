@@ -34,6 +34,7 @@ public final class InterlisValidator implements Validator {
                     .command(
                             "java", "-jar", options.ilivalidatorPath().toString(),
                             "--log", logFile.toString(),
+                            "--verbose",
                             "--modeldir", options.basePath() + ";%ITF_DIR;http://models.interlis.ch/;%JAR_DIR/ilimodels")
                     .redirectOutput(ProcessBuilder.Redirect.DISCARD)
                     .redirectError(ProcessBuilder.Redirect.DISCARD)
